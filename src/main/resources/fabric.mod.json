@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "magecraft",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Magecraft",
+  "description": "Vanilla-style magic and owls for Minecraft.",
   "authors": [
-    "Me!"
+    "MageOwl Studios"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://mageowlstudios.com",
+    "sources": "https://github.com/mageowl/magecraft-mc"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.mageowlstudios.magecraft.MagecraftMod"
+    ],
+    "client": [
+      "net.mageowlstudios.magecraft.client.MagecraftModClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "magecraft.mixins.json"
   ],
 
   "depends": {
