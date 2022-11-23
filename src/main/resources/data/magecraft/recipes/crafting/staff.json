@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#/#",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "magecraft:amethyst_dust"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "magecraft:staff",
+    "count": 1
+  }
+}

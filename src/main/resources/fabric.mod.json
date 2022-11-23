@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "magecraft",
+  "version": "${version}",
+  "name": "Magecraft",
+  "description": "Vanilla+ magic mod for 1.19.",
+  "authors": [
+    "Owen L."
+  ],
+  "contact": {
+    "website": "mageowstudios.com",
+    "repo": "github.com/mageowl/magecraft-mc"
+  },
+  "license": "MIT",
+  "icon": "assets/magecraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mageowlstudios.magecraft.client.MagecraftClient"
+    ],
+    "main": [
+      "com.mageowlstudios.magecraft.MagecraftMod"
+    ]
+  },
+  "mixins": [
+    "magecraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
